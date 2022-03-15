@@ -7,7 +7,6 @@
 }
 
 :root {
-    background-color: rgb(30, 30, 31);
     --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --light: #fff;
     --dark: rgb(110, 110, 110); 
@@ -15,10 +14,7 @@
 
 body{
     font-family: var(--font);
-    background-image: linear-gradient(
-          rgb(31, 31, 30) 0%,
-        rgb(255, 192, 203) 100%
-         );
+    background-image: linear-gradient(to top, #ffdd83, #ffc583, #ffae91, #ff9ba8, #ff91c1, #fd90d1, #f690e3, #ea93f6, #da97fb, #c99afd, #b89dff, #a7a0ff);
     margin: 0;
     min-height: 100vh;
     scroll-behavior: smooth;
@@ -46,47 +42,50 @@ main{
 
 h1{
 text-align: left;
-color: pink;
+color: rgb(255, 173, 186);
 display: flex;
 gap: 20px;
 margin-top:-10px;
 margin-left: 25px;
 font-size: 200%;
+font-family: 'Courier New', Courier, monospace;
 
 }
 
 nav ul {
-    text-align: right;
+    text-align: center;
     list-style: none;
     justify-content: flex-end;
     gap: 40px;
     flex-direction: row;
     display: flex;
-    color: pink;
-    margin: 40px 60px 40px 40px;
+    color: rgb(255, 255, 255);
+    padding: 30px 8.33%;
     text-decoration: none;
     position: sticky;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    
     
 
 }
 
 a:link {
-    color: pink;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   
   a:visited {
-    color: pink;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   
   a:hover {
-    background-color: pink;
-    text-decoration: none;
+    text-decoration: underline;
   }
   
   a:active {
-    color: pink;
+    color: rgb(255, 182, 113);
     text-decoration: none;
   } 
 
@@ -121,18 +120,6 @@ overflow-wrap: break-word;
 color: #fff;
 }
 
-section ul {
-    text-align: center;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 20px;
-    flex-direction: row;
-    display: flex;
-    color: rgb(0, 0, 0);
-    margin: 40px 60px 40px 40px;
-    text-decoration: none;
-
-}
 
 .socials{
     display: flex;
@@ -147,22 +134,40 @@ section ul {
 footer {
     text-align: center;
 }
-.work-image {
+#refactor {
     width: 800px;
     height: 350px;
     margin-left: 400px;
     margin-top: 60px;
     opacity: 0.5;
     border: 5px solid rgb(255, 192, 55);
+
+}
+#refactor:hover {
+    opacity: 1;
+    z-index: 2;
 }
 
+.work-image {
+    width: 400px;
+    height: 175px;
+    margin-left: 400px;
+    margin-top: 60px;
+    opacity: 0.6;
+    border: 5px solid rgb(255, 192, 55);
+ 
+}
 .work-image:hover {
     opacity: 1;
+    z-index: 2;
 }
 .container {
     position: relative;
     text-align: center;
     color: white;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap
   }
   
   /* Bottom left text */
@@ -174,5 +179,20 @@ footer {
     line-height: 1.3;
     background-color: rgb(255, 192, 55);
     padding: 10px;
+    z-index: 1;
     
+  }
+
+  .socials {
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    padding-bottom:80px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+   margin-left: 45px;
   }
