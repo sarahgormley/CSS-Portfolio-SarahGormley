@@ -185,8 +185,6 @@ div .transbox {
 
 .title {
     font-size: 30px;
-    display: block;
-    flex-direction: column;
     float: right;
     writing-mode: vertical-rl;
     margin-right: -45px;
@@ -217,4 +215,46 @@ div .transbox {
 
 footer {
     text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    #work img {
+        flex: 25%;
+    }
+    .lg-img {
+        width: 400px;
+        height: 175px;
+    }
+    #refactor {
+        width: 410px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #work img {
+        flex: 25%;
+    }
+    .lg-img {
+        width: 400px;
+        height: 175px;
+    }
+    #refactor {
+        width: 410px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #work img {
+        flex: 25%;
+    }
+    .lg-img {
+        width: 400px;
+        height: 175px;
+    }
+    #refactor {
+        width: 410px;
+        height: 190px;
+    }
 }
