@@ -1,18 +1,29 @@
+            /* Universal selectors for Boxes, padding and margins. Also Smooth scrool effect*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
-:root {
+
+/* Variable shortcut for font */
+
+ :root {
     --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+/* Font applied to body. Gradient background image here. */
 
 body {
     font-family: var(--font);
     background-image: linear-gradient(to top, #ffecb9, #ffdbb1, #fdc6b1, #fdbcc4, #fcb9d6, #fabde1, #f8b8ec, #f3bdfa, #e6bcfc, #dbc2f8, #cdbcf8, #bab6f8);
-    scroll-behavior: smooth;
 }
+
+
+/* Nav Bar. Applies flex & design rules. Applies styling to links using font, list style, font size, color, and paddng*/
 
 nav ul {
     display: flex;
@@ -25,6 +36,9 @@ nav ul {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+/* Rules for links. On hover, visited links, and active links, color and text decoration changes*/
 
 a:link {
     color: rgb(255, 255, 255);
@@ -45,14 +59,23 @@ a:active {
     text-decoration: none;
 }
 
+
+/* Sets the width of the main section of the webpage. */
+
 main {
     width: 75%;
 }
+
+
+/* Positions card with name and profile picture on left */
 
 .card {
     margin-left: 20px;
     position: fixed;
 }
+
+
+/* Sets color, margins, font and size for name in card */
 
 h1 {
     color: rgb(255, 255, 255);
@@ -62,16 +85,25 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+
+/* Sets positioning and border rules for profile image */
+
 aside img {
     width: 250px;
     border-radius: 50%;
     margin: 20px;
 }
 
+
+/* Creates vertical white line on right of page*/
+
 .vl {
     border-right: thick solid #fff;
     margin-right: -140px;
 }
+
+
+/* Styles the headings vertically, white, and on right of page */
 
 h2 {
     margin-top: 20px;
@@ -81,6 +113,9 @@ h2 {
     writing-mode: vertical-rl;
     color: white;
 }
+
+
+/* Sets position, margins and font rules for my 'About Me' section */
 
 #description {
     margin-left: 395px;
@@ -94,21 +129,36 @@ h2 {
     padding: 10px;
 }
 
+
+/* Changes opacity of About Me on hovering over text */
+
 #description:hover {
     opacity: 1;
 }
 
-#work-container {
+
+/* Sets rules for entire Work section. Sets flex wrap for content */
+
+#work {
     margin-left: 410px;
     margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+/* Sets specific rules for Code Refactor section. Makes this image take up 100% of space on that line */
 
 #refactor {
     width: 100%;
     border: 5px solid rgb(255, 192, 55);
+    margin-right: 10px;
     color: white;
     position: relative;
 }
+
+
+/* Changes opacity of Refactor image on hover */
 
 #refactor img:hover {
     opacity: 1;
@@ -116,9 +166,9 @@ h2 {
 }
 
 
-/* Bottom left text */
+/* Work titles text positioned over image */
 
-.bottom-left {
+.titles {
     position: absolute;
     bottom: 35px;
     font-size: 25px;
@@ -128,26 +178,27 @@ h2 {
     z-index: 1;
 }
 
+
+/* Sets size rules for Code Refactor image */
+
 .lg-img {
     width: 100%;
     height: auto;
     opacity: 0.6;
 }
 
-#work-flex {
-    display: flex;
-    flex: wrap;
-    width: 50%;
-}
+
+/* Sets size rules for remaining work sections. Sets width to 50% so there are 2 per line */
 
 .container {
     position: relative;
-    text-align: center;
-    color: white;
-    flex-wrap: wrap;
+    width: 50%;
 }
 
-#work-flex img {
+
+/* Sets size rules for remaining images */
+
+.container img {
     width: 400px;
     height: 175px;
     margin-top: 60px;
@@ -159,12 +210,18 @@ h2 {
     flex: 1 1 auto;
 }
 
-#work-flex img:hover {
+
+/* Changes opacity of images on hover */
+
+.container img:hover {
     opacity: 1;
     z-index: 2;
 }
 
-.socials {
+
+/* Rules for Contact section links. */
+
+#socials {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -180,48 +237,36 @@ h2 {
     line-height: 1.5px;
 }
 
+
+/* Styling for footer*/
+
 footer {
     text-align: center;
+    color: rgb(119, 119, 119);
+    font: var(--font);
 }
+
+
+/* Media Screen rules for responsive layout*/
 
 @media screen and (max-width: 992px) {
-    #work img {
-        flex: 25%;
-    }
-    {
-        width: 400px;
-        height: 175px;
+    .container {
+        width: 100%;
     }
     #refactor {
-        width: 410px;
-        height: 190px;
+        width: 100%;
     }
-}
-
-@media screen and (max-width: 768px) {
-    #work img {
-        flex: 25%;
-    }
-    .lg-img {
-        width: 400px;
-        height: 175px;
-    }
-    #refactor {
-        width: 410px;
-        height: 190px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #work img {
-        flex: 25%;
-    }
-    {
-        width: 400px;
-        height: 175px;
-    }
-    #refactor {
-        width: 410px;
-        height: 190px;
-    }
-}
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 100%;
+        }
+        #refactor {
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .container {
+                width: 100%;
+            }
+            #refactor {
+                width: 100%;
+            }
