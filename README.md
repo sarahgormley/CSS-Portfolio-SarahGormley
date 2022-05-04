@@ -2,7 +2,7 @@
 
 Web Developer: Sarah Gormley
 
-Website live URL: https://sarahgormley.github.io/CSS-Portfolio-SarahGormley/
+Website live URL: https://sarahgormley.github.io/CSS-Portfolio-SarahGormley/  
 Website screenshot:  [CSS Portfolio Screenshot](./images/screenshot.png) 
 
 This portfolio was created as a way to showcase my skills in using HTML and CSS to create a stylish and functional webpage containing information about myself, my work as a web developer, and links to my contact information. This webapge contains information about me, a showcase of my current portfolio, and links for potential employers to contact me. 
