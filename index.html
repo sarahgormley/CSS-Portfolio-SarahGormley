@@ -3,11 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <title>Web Developer: Sarah Gormley</title>
+
+    <script src="./Assets/particles.js-master 3/particles.js"></script>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <script src="./Assets/JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Sarah Gormley</title>
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <header>
         <nav>
             <ul>
@@ -27,17 +34,28 @@
             </ul>
         </nav>
     </header>
+    <aside class="card">
+        <a href="#"><img src="./Assets/Images/bwimg.jpeg" alt="Profile Pic"></a>
+
+    </aside>
     <main>
-        <aside class="card">
-            <h1>Sarah Gormley</h1>
-            <img src="./Images/79004742_10217969255557764_2304786571812929536_n.jpeg" alt="Profile Pic">
-        </aside>
+        <div class="intro">
+            <p id="welc">Welcome!</p>
+            <p id="me">I'm Sarah</p>
+            <p id="dev">A Full Stack Web Developer</p>
+
+            <div class="arrow"><a href="#description">⌄</a></div>
+        </div>
+
         <section class="vl">
             <h2>About Me</h2>
             <div>
-                <p id="description"> Welcome! My name is Sarah, and I am an aspiring Web Developer. <br> <br> My interest in web development stems from trying to modify my Tumblr theme back in 2013. Without knowing it at the time, I was slowly gaining a knowledge of HTML
-                    and CSS - changing elements to play with the layout and design of my Tumblr blog! <br> Fast forward to today, I am studying to become a Web Developer through University of Adelaide's Coding Bootcamp. My main goal is to create user
-                    accessible, stylish and functional web pages to ensure clients have the best digital experience possible. My current knowledge base includes: HTML & CSS. </p>
+                <p id="description"> Hi there! My name is Sarah, and I'm a Full Stack Web Developer from Brisbane, Australia. <br> <br>I enjoy deep dives into technical documentation and scratching my head until I solve problems. I love staying up to date with the latest
+                    frameworks and web development trends. <br> <br> When not at my computer, you can find me at the beach or camping!<br>
+                    <br> My goal is to use my attention for detail, creativity, knowledge, and passion for aesthetics to deliver functional and stylish front and back end web applications.
+                    <br> My current skillset includes HTML, CSS, Javascript, JQuery, Node, Express, SQL, and Mongo DB.
+                </p>
+                <p id="skills"></p>
             </div>
         </section>
 
@@ -45,27 +63,27 @@
             <div id="refactor">
                 <a href="https://github.com/sarahgormley/hollyview">
                     <div class="titles">HollyView</div>
-                    <img class="lg-img" src="./Images/hollyview.jpeg" alt="HollyViewImg"></a>
+                    <img class="lg-img" src="./Assets/Images/hollyview.jpeg" alt="HollyViewImg"></a>
             </div>
             <div class="container">
                 <a href="https://github.com/sarahgormley/Work-Day-Scheduler">
                     <div class="titles">Work Day Scheduler </div>
-                    <img src="./Images/scheduler.jpeg" alt="schedule"></a>
+                    <img src="./Assets/Images/scheduler.jpeg" alt="schedule"></a>
             </div>
             <div class="container">
                 <a href="https://github.com/sarahgormley/Sarahs-Code-Quiz">
                     <div class="titles">Code Quiz</div>
-                    <img src="./Images/codequiz.jpeg" alt="Code Quiz"></a>
+                    <img src="./Assets/Images/codequiz.jpeg" alt="Code Quiz"></a>
             </div>
             <div class="container">
                 <a href="https://github.com/sarahgormley/sarahs-password-generator">
                     <div class="titles">Password Generator</div>
-                    <img src="./Images/pword.png" alt="Password"></a>
+                    <img src="./Assets/Images/pword.png" alt="Password"></a>
             </div>
             <div class="container">
                 <a href="https://github.com/sarahgormley/weather-dashboard">
                     <div class="titles">Weather Dashboard</div>
-                    <img src="./Images/weatherdashboard.jpg" alt="Weather"></a>
+                    <img src="./Assets/Images/weatherdashboard.jpg" alt="Weather"></a>
             </div>
             <br>
             <br>
@@ -82,6 +100,7 @@
             </ul>
         </section>
     </main>
+    </div>
 </body>
 <footer>
     <p>2022 Designed & Built by Sarah Gormley </p>
